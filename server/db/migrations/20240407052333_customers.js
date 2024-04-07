@@ -4,7 +4,8 @@
  */
 export function up(knex) {
   return knex.schema.createTable('customers', (table) => {
-    table.increments('id')
+    table.increments('id').primary()
+    table.string('auth0_id').unique()
     table.string('first_name')
     table.string('last_name')
     table.string('email')
