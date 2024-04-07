@@ -9,7 +9,6 @@ export function up(knex) {
     table.string('color_one')
     table.string('color_two')
     table.number('price')
-    table.number('add_on_id')
     table.boolean('is_custom')
     table.string('image')
   })
