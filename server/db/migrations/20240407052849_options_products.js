@@ -3,8 +3,8 @@
  * @returns { Promise<void> }
  */
 export function up(knex) {
-  return knex.schema.createTable('add_ons_products', (table) => {
-    table.number('add_on_id')
+  return knex.schema.createTable('options_products', (table) => {
+    table.number('option_id')
     table.number('product_id')
   })
 }
@@ -14,5 +14,5 @@ export function up(knex) {
  * @returns { Promise<void> }
  */
 export function down(knex) {
-  return knex.schema.dropTable('add_ons_products')
+  return knex.schema.dropTable('options_products')
 }

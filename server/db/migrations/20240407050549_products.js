@@ -6,10 +6,7 @@ export function up(knex) {
   return knex.schema.createTable('products', (table) => {
     table.increments('id')
     table.string('name')
-    table.string('color_one')
-    table.string('color_two')
     table.number('price')
-    table.boolean('is_custom').defaultTo(0)
     table.string('image')
   })
 }
