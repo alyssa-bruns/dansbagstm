@@ -12,7 +12,7 @@ export async function seed(knex) {
       number_of_items: 1,
     },
     {
-      id: 1,
+      id: 2,
       date: 20240409,
       total_amount: 130,
       customer_id: 2,
