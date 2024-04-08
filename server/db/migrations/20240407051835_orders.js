@@ -8,6 +8,7 @@ export function up(knex) {
     table.date('date')
     table.number('total_amount')
     table.number('customer_id')
+    table.number('number_of_items')
   })
 }
 
