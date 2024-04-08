@@ -45,7 +45,7 @@ export async function seed(knex) {
       price: 0,
     },
     {
-      id: 4,
+      id: 5,
       option: 'orange',
       description: 'option description',
       is_available: 1,
@@ -55,7 +55,7 @@ export async function seed(knex) {
       price: 0,
     },
     {
-      id: 5,
+      id: 6,
       option: 'black',
       description: 'option description',
       is_available: 1,
@@ -65,7 +65,7 @@ export async function seed(knex) {
       price: 0,
     },
     {
-      id: 5,
+      id: 7,
       option: 'camo',
       description: 'option description',
       is_available: 1,
@@ -75,13 +75,23 @@ export async function seed(knex) {
       price: 0,
     },
     {
-      id: 6,
+      id: 8,
       option: 'custom color',
       description: 'option description',
       is_available: 1,
       is_custom: 1,
       is_color: 1,
       is_add_on: 0,
+      price: 0,
+    },
+    {
+      id: 9,
+      option: 'full custom',
+      description: 'option description',
+      is_available: 1,
+      is_custom: 1,
+      is_color: 0,
+      is_add_on: 1,
       price: 0,
     },
   ])
