@@ -7,7 +7,7 @@ export function up(knex) {
     table.increments('id')
     table.string('option')
     table.string('description')
-    table.number('price')
+    table.integer('price')
     table.boolean('is_custom')
     table.boolean('is_available')
     table.boolean('is_color')

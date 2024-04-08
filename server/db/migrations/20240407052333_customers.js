@@ -9,7 +9,7 @@ export function up(knex) {
     table.string('first_name')
     table.string('last_name')
     table.string('email')
-    table.number('phone')
+    table.integer('phone')
     table.string('address')
   })
 }

@@ -4,8 +4,8 @@
  */
 export function up(knex) {
   return knex.schema.createTable('options_products', (table) => {
-    table.number('option_id')
-    table.number('product_id')
+    table.integer('option_id')
+    table.integer('product_id')
   })
 }
 
