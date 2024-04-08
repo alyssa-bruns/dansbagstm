@@ -11,6 +11,7 @@ export async function seed(knex) {
       is_available: 1,
       is_custom: 0,
       is_color: 0,
+      is_add_on: 1,
       price: 10,
     },
     {
@@ -20,6 +21,7 @@ export async function seed(knex) {
       is_available: 1,
       is_custom: 0,
       is_color: 0,
+      is_add_on: 1,
       price: 50,
     },
     {
@@ -29,6 +31,7 @@ export async function seed(knex) {
       is_available: 1,
       is_custom: 0,
       is_color: 1,
+      is_add_on: 0,
       price: 0,
     },
     {
@@ -38,6 +41,7 @@ export async function seed(knex) {
       is_available: 1,
       is_custom: 0,
       is_color: 1,
+      is_add_on: 0,
       price: 0,
     },
     {
@@ -47,6 +51,7 @@ export async function seed(knex) {
       is_available: 1,
       is_custom: 0,
       is_color: 1,
+      is_add_on: 0,
       price: 0,
     },
     {
@@ -56,6 +61,7 @@ export async function seed(knex) {
       is_available: 1,
       is_custom: 0,
       is_color: 1,
+      is_add_on: 0,
       price: 0,
     },
     {
@@ -65,6 +71,7 @@ export async function seed(knex) {
       is_available: 1,
       is_custom: 0,
       is_color: 1,
+      is_add_on: 0,
       price: 0,
     },
     {
@@ -74,15 +81,7 @@ export async function seed(knex) {
       is_available: 1,
       is_custom: 1,
       is_color: 1,
-      price: 0,
-    },
-    {
-      id: 7,
-      option: 'double zip/compartment',
-      description: 'option description',
-      is_available: 1,
-      is_custom: 1,
-      is_color: 0,
+      is_add_on: 0,
       price: 0,
     },
   ])

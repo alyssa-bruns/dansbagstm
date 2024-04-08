@@ -41,7 +41,7 @@ export async function seed(knex) {
       image: 'url',
     },
     {
-      id: 4,
+      id: 5,
       name: 'custom full frame bag',
       description: 'product description',
       is_custom: 0,
@@ -50,7 +50,7 @@ export async function seed(knex) {
       image: 'url',
     },
     {
-      id: 5,
+      id: 6,
       name: 'custom order',
       description: 'product description',
       is_custom: 1,
