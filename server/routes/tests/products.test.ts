@@ -3,7 +3,7 @@ import request from 'supertest'
 import * as productsDb from '../../db/functions/products'
 import server from '../../server'
 
-vi.mock('../../db/products')
+vi.mock('../../db/functions/products')
 
 const mockProducts = [
   {
@@ -38,6 +38,23 @@ describe('GET api/v1/products', async () => {
     vi.mocked(productsDb.getAllProducts).mockRejectedValue(mockProducts)
 
     const res = await request(server).get('/api/v1/products')
+
+    expect(res.statusCode).toBe(500)
+  })
+})
+
+describe('GET api/v1/priducts/:id', async () => {
+  it('should get one product', async () => {
+    vi.mocked(productsDb.getSingleProduct).mockResolvedValue(mockProducts)
+
+    const res = await request(server).get('/api/v1/products/2')
+
+    expect(res.statusCode).toBe(200)
+  })
+  it('should send an error message', async () => {
+    vi.mocked(productsDb.getSingleProduct).mockRejectedValue(mockProducts)
+
+    const res = await request(server).get('/api/v1/products/2')
 
     expect(res.statusCode).toBe(500)
   })

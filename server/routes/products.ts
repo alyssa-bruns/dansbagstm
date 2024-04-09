@@ -19,8 +19,8 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const id = Number(req.params.id)
-    const post = await db.getSingleProduct(id)
-    res.json(post)
+    const product = await db.getSingleProduct(id)
+    res.json(product)
   } catch (error) {
     res.sendStatus(500)
   }

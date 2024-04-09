@@ -19,6 +19,14 @@ describe('getAllProdcuts', () => {
   })
 })
 
+describe('getSinglePost', () => {
+  it('should get just one product', async () => {
+    const singleProduct = await db.getSingleProduct(2)
+    expect(singleProduct).toHaveLength(1)
+    expect(singleProduct[0].id).toBe(2)
+  })
+})
+
 afterAll(() => {
   connection.destroy()
 })
