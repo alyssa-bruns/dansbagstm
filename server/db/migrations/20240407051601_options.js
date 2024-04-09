@@ -11,6 +11,8 @@ export function up(knex) {
     table.boolean('is_custom')
     table.boolean('is_available')
     table.boolean('is_color')
+    table.boolean('is_color_one')
+    table.boolean('is_color_two')
     table.boolean('is_add_on')
   })
 }

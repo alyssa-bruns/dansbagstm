@@ -5,7 +5,7 @@ function Footer() {
     <>
       <footer>
         <div>
-          <a>Contact</a>
+          <p>Contact</p>
         </div>
         <div>
           <p>© Alyssa Bruns 2024</p>
