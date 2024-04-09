@@ -5,6 +5,9 @@ import {
   Route,
 } from 'react-router-dom'
 import App from './components/App'
+import Home from './components/Home'
+import Products from './components/Products'
+import Product from './components/Product'
 
 const router = createBrowserRouter(
   createRoutesFromElements(

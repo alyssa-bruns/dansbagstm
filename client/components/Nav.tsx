@@ -5,15 +5,15 @@ function Nav() {
     <>
       <nav>
         <div>
-          <a>DANSBAGSTM</a>
+          <Link to="/">DANSBAGSTM</Link>
         </div>
         <div>
-          <a>Products</a>
-          <a>FAQ</a>
-          <a>Gallery</a>
-          <a>Blog</a>
-          <a>Login</a>
-          <a>Cart</a>
+          <Link to="/products">Products</Link>
+          <p>FAQ</p>
+          <p>Gallery</p>
+          <p>Blog</p>
+          <p>Login</p>
+          <p>Cart</p>
         </div>
       </nav>
     </>
