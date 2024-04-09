@@ -1,6 +1,6 @@
 import { it, expect, describe, vi } from 'vitest'
 import request from 'supertest'
-import * as productsDb from '../../db/products'
+import * as productsDb from '../../db/functions/products'
 import server from '../../server'
 
 vi.mock('../../db/products')

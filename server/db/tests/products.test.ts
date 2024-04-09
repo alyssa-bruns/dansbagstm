@@ -1,4 +1,4 @@
-import * as db from '../products.ts'
+import * as db from '../functions/products.ts'
 import { describe, it, expect, beforeAll, beforeEach, afterAll } from 'vitest'
 import connection from '../connection'
 
