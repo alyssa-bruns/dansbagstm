@@ -15,4 +15,15 @@ router.get('/', async (req, res) => {
   }
 })
 
+// GET /api/v1/products/:id
+router.get('/:id', async (req, res) => {
+  try {
+    const id = Number(req.params.id)
+    const post = await db.getSingleProduct(id)
+    res.json(post)
+  } catch (error) {
+    res.sendStatus(500)
+  }
+})
+
 export default router
